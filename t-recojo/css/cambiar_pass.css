@@ -1,0 +1,40 @@
+.contenedor-change {
+  height: 100%;
+  width: 100%;
+  background: #eee;
+  padding: 0 5em;
+}
+
+.frm-change-pass {
+  width: 300px;
+  height: 250px;
+  background: #fff;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: .5em .8em;
+  box-shadow: 0 0 4px 1px #0D4687;
+}
+.frm-change-pass label {
+  font-weight: 600;
+}
+
+.frm-botton-pass {
+  display: flex;
+  justify-content: center;
+}
+.frm-botton-pass button[type="button"] {
+  margin-top: 20px;
+  height: 40px;
+  width: 100%;
+  font-weight: 600;
+  background: #0D4687;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=cambiar_pass.css.map */

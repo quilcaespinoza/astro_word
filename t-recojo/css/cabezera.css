@@ -1,0 +1,262 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.cabezera {
+  height: 70px;
+  width: 100%;
+  background: white;
+  display: flex;
+  padding: 0 4em;
+  position: relative;
+  max-width: 1500px;
+  box-shadow: 0px 4px 8px 0px #eee;
+}
+.cabezera .logo {
+  width: 30%;
+  height: 100%;
+  /*background: orange;*/
+  padding: 0 3em;
+}
+.cabezera .logo img {
+  width: 200px;
+  height: 70px;
+}
+.cabezera .items {
+  width: 70%;
+  height: 100%;
+  /*background: steelblue;*/
+  padding: 1.2em 2em;
+  position: relative;
+}
+.cabezera .items a {
+  float: right;
+  padding: .2em 1em;
+  margin: 0 5px;
+}
+@media screen and (max-width: 1200px) {
+  .cabezera {
+    padding: 0 2em;
+  }
+  .cabezera .logo {
+    padding: 0 2em;
+  }
+  .cabezera .items {
+    padding: 1.2 1em;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .cabezera .items {
+    display: none;
+  }
+  .cabezera .icon-menu {
+    display: block;
+  }
+}
+
+.sesion {
+  border: 1px solid #0D4687;
+  border-radius: 10px;
+  color: #0D4687;
+  transition: all .5s;
+}
+.sesion:hover {
+  background: #0D4687;
+  color: white;
+}
+
+.color-a {
+  color: black;
+}
+.color-a:hover {
+  color: black;
+}
+
+.icon-menu {
+  height: 100%;
+  width: 70%;
+  position: relative;
+  display: none;
+}
+.icon-menu .icon-menu-res {
+  height: 100%;
+  width: 60px;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon-menu span {
+  font-size: 35px;
+}
+
+.menu-nav-res {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 30;
+  position: fixed;
+  display: none;
+}
+
+.menu-nav {
+  position: absolute;
+  width: 320px;
+  height: 100%;
+  background: #0D4687;
+  padding: 2em 2.5em;
+  transition: all .5s;
+  right: 0;
+}
+.menu-nav .cerrar {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  right: 30px;
+  top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3px;
+  border: 1px solid white;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+}
+.menu-nav ul {
+  padding: 0;
+}
+.menu-nav li {
+  list-style: none;
+  line-height: 2.2em;
+  border-bottom: 1px solid #fff;
+}
+.menu-nav a {
+  display: block;
+  color: white;
+  transition: all .2s;
+}
+.menu-nav a:hover {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.espacio {
+  color: transparent;
+}
+
+.inicio-sesion {
+  width: 250px;
+  background: white;
+  padding: .5em .5em;
+  box-shadow: 0px 0px 8px 2px #aaa;
+  position: fixed;
+  top: 70px;
+  margin: auto;
+  right: 3%;
+  z-index: 9999999;
+  display: none;
+}
+.inicio-sesion input {
+  width: 100%;
+  margin: 4px 0;
+  padding: .2em .5em;
+  font-size: 14px;
+  border: 2px solid #bbb;
+  height: 35px;
+  border-radius: 5px;
+}
+.inicio-sesion a {
+  font-size: 14px;
+}
+.inicio-sesion button {
+  width: 100%;
+  margin-top: 5px;
+  height: 35px;
+  color: white;
+}
+.inicio-sesion button[type="submit"] {
+  background: #0D4687;
+  border: 1px solid #0D4687;
+  margin-bottom: 2px;
+}
+.inicio-sesion button[type="button"] {
+  background: #0D4687;
+  border: 1px solid #0D4687;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.cerrar-inicio-sesion {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 210px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.cerrar-inicio-sesion span {
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+.contenedor-pag, .contenedor-cabezera {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-pag {
+  align-items: center;
+  flex-direction: column;
+}
+
+.contenedor-cabezera {
+  height: 70px;
+  position: fixed;
+  z-index: 20;
+}
+
+@media screen and (max-width: 1000px) {
+  .cabezera {
+    padding: 0 3em;
+  }
+}
+@media screen and (max-width: 900px) {
+  .cabezera {
+    padding: 0 2em;
+  }
+  .cabezera .logo {
+    padding: 0 2em;
+  }
+}
+@media screen and (max-width: 800px) {
+  .cabezera {
+    padding: 0 1em;
+  }
+  .cabezera .logo {
+    padding: 0 1em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cabezera {
+    padding: 0 .5em;
+  }
+  .cabezera .logo {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=cabezera.css.map */

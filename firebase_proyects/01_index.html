@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hola"></h1>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyC1P_UlAIFn_-WvCDCaXRFMhbCYSmO82aI",
+        authDomain: "firstapp-dfba8.firebaseapp.com",
+        databaseURL: "https://firstapp-dfba8.firebaseio.com",
+        projectId: "firstapp-dfba8",
+        storageBucket: "firstapp-dfba8.appspot.com",
+        messagingSenderId: "575180610248"
+      };
+      firebase.initializeApp(config);
+      const hola = document.getElementById("hola")
+      const dbRef = firebase.database().ref().child('text')
+      dbRef.on('value', snap => hola.innerText = snap.val() )
+    </script>
+</body>
+</html>

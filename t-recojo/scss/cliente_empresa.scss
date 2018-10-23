@@ -1,0 +1,76 @@
+.contenedor{
+	width: 100%;
+	//background: red;
+	padding: 0 10em;
+	padding-top: 160px;
+	//background: red;
+	
+}
+.contenedor-table{
+	width: 100%;
+	
+	//background: green;
+	max-height: 500px;
+	overflow-y:auto;
+	overflow-x:auto;
+	
+}
+
+.cabezera-usuario{
+	height: 35px;
+	width: 100%;
+	background: #eee;
+	position: fixed;
+	top:71px;
+	z-index: 20;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	& label{
+		
+		padding: 0 1em;
+		margin-bottom: 0;
+
+	}
+}
+.cancelar-viaje{
+	background: #dc3545;
+	border:none;
+	width: 30px;
+	color: #fff;
+}
+.aceptar-viaje{
+	background: #28a745;
+	border:none;
+	width: 30px;
+	color:#fff;
+}
+.check{
+	display: none;
+}
+
+@media screen and (max-width: 1200px){
+	.contenedor{
+		padding: 0 6em;
+		padding-top: 160px;
+	}
+}
+@media screen and (max-width: 1100px){
+	.contenedor{
+		padding: 0 4em;
+		padding-top: 160px;
+	}
+}
+@media screen and (max-width: 1000px){
+	.contenedor{
+		padding: 0 1em;
+		padding-top: 160px;
+	}
+}
+@media screen and (max-width: 900px){
+	.contenedor{
+		padding: 0 .5em;
+		padding-top: 160px;
+	}
+}
+
