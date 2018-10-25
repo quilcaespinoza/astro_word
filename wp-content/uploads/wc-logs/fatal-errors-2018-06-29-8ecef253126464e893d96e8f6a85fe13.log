@@ -1,0 +1,10 @@
+2018-06-29T13:50:52+00:00 CRITICAL Uncaught UnexpectedValueException: RecursiveDirectoryIterator::__construct(/home/andrew/dev/wp/finvision/wp-content/themes/finvision/demo-content/demo-v1.0.0/f): failed to open dir: Permission denied in /home/andrew/dev/wp/finvision/wp-content/plugins/envato-theme-check-master/checkbase.php:167
+Stack trace:
+#0 [internal function]: RecursiveDirectoryIterator->__construct('/home/andrew/de...', 0)
+#1 /home/andrew/dev/wp/finvision/wp-content/plugins/envato-theme-check-master/checkbase.php(167): RecursiveDirectoryIterator->getChildren()
+#2 /home/andrew/dev/wp/finvision/wp-content/plugins/envato-theme-check-master/main.php(6): listdir('/home/andrew/de...')
+#3 /home/andrew/dev/wp/finvision/wp-content/plugins/envato-theme-check-master/theme-check.php(68): check_main('/home/andrew/de...')
+#4 /home/andrew/dev/wp/finvision/wp-includes/class-wp-hook.php(286): EnvatoThemeCheck->themecheck_do_page('')
+#5 /home/andrew/dev/wp/finvision/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#6 /home/andrew/dev/
+

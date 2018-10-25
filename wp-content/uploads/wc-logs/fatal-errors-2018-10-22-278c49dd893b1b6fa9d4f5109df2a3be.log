@@ -1,0 +1,10 @@
+2018-10-22T14:26:53+00:00 CRITICAL Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'https://test2.alignetsac.com/WALLETWS/services/WalletCommerce?wsdl' : failed to load external entity "https://test2.alignetsac.com/WALLETWS/services/WalletCommerce?wsdl"
+ in /home6/astrovis/public_html/wp-content/plugins/woocommerce-payme-gateway/woocommerce-gateway-payme.php:435
+Stack trace:
+#0 /home6/astrovis/public_html/wp-content/plugins/woocommerce-payme-gateway/woocommerce-gateway-payme.php(435): SoapClient->SoapClient('https://test2.a...')
+#1 /home6/astrovis/public_html/wp-content/plugins/woocommerce-payme-gateway/woocommerce-gateway-payme.php(536): WC_payme->get_payme_args(2340)
+#2 /home6/astrovis/public_html/wp-content/plugins/woocommerce-payme-gateway/woocommerce-gateway-payme.php(308): WC_payme->generate_payme_form(2340)
+#3 /home6/astrovis/public_html/wp-includes/class-wp-hook.php(286): WC_payme->receipt_page(2340)
+#4 /home6/astrovis/public_html/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#5
+

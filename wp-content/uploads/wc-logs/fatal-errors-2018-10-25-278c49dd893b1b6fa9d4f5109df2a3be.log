@@ -1,0 +1,6 @@
+2018-10-25T15:06:21+00:00 CRITICAL Uncaught Error: Call to a member function update_status() on boolean in /home6/astrovis/public_html/wp-content/plugins/woocommerce-payme-gateway/response.php:156
+Stack trace:
+#0 /home6/astrovis/public_html/wp-content/plugins/woocommerce-payme-gateway/response.php(117): process_payment(NULL, 'dd850b59c31acfe...', NULL, '-')
+#1 {main}
+  thrown en /home6/astrovis/public_html/wp-content/plugins/woocommerce-payme-gateway/response.php en la línea 156
+
